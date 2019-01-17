@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.4.4"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  }
+}

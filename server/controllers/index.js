@@ -6,5 +6,14 @@ module.exports = {
         let res = await service.test()
 
         ctx.body = res
+    },
+    addMsg: async (ctx) => {
+        
+        // let { body } = ctx.request
+        console.log(ctx.request.body)
+        
+        let res = await service.addMsg(JSON.stringify(ctx.request.body))
+
+        ctx.body = res
     }
 }

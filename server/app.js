@@ -5,8 +5,10 @@ const routes = require('./routers/index.js')
 // import routes from './routers'
 const mongoose = require('mongoose')
 const dbConfig = require('./dbs/config')
+const bodyParser = require('koa-bodyparser')
 
 const app = new Koa()
+app.use(bodyParser())
 
 // console.log('-----')
 // console.log(routes)

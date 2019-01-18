@@ -5,6 +5,7 @@ const controllers = require('../controllers')
 
 router
     .get('/', controllers.home)
+    .post('/addMsg', controllers.addMsg)
 
 
 module.exports = router

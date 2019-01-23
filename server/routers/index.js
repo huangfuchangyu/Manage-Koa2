@@ -4,8 +4,8 @@ const router = require('koa-router')()
 const controllers = require('../controllers')
 
 router
-    .get('/', controllers.home)
     .post('/addMsg', controllers.addMsg)
+    .post('/list', controllers.getList)
 
 
 module.exports = router

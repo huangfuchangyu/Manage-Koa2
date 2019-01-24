@@ -31,10 +31,6 @@ module.exports = {
 
         } catch (e) {
 
-            console.log('AAAAAA')
-            console.log(e)
-            console.log('AAAAAA')
-
             resp = ResponseObj(
                 {
                     code: ResponseCode.SERVICEERROR,

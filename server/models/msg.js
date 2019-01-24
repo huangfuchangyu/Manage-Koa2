@@ -22,6 +22,14 @@ let msgSchema = new mongoose.Schema({
         validate: function (decs) {
             return decs.length <= 25
         }
+    },
+    createTime: {
+        type: String,
+        required: true
+    },
+    valid: {
+        type: Number,
+        default: 1
     }
 })
 

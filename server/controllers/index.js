@@ -13,5 +13,9 @@ module.exports = {
     getList: async (ctx) => {
         let res = await service.getList()
         ctx.body = res
+    },
+    del: async (ctx) => {
+        let res = await service.del(JSON.stringify(ctx.request.body))
+        ctx.body = res
     }
 }
